@@ -3,7 +3,7 @@
 class spotifyApiServer {
 
     protected $serverUrl = "127.0.0.1";
-    protected $serverPort = 1337;    
+    protected $serverPort = 1337;
 
     protected function getApiUrl($method) {
         return sprintf(
@@ -14,7 +14,7 @@ class spotifyApiServer {
         );
     }
 
-    protected function post($method, $data) {} 
+    protected function post($method, $data) {}
 
     protected function get($method) {
         $url = $this->getApiUrl($method);
